@@ -52,5 +52,6 @@ test("renders focus while clicking tab button", async () => {
   await userEvent.tab();
   expect(amountInput).toHaveFocus();
   await userEvent.tab();
-  expect(setButton).not.toHaveFocus();
+
+  expect(setButton).toHaveFocus();
 });
