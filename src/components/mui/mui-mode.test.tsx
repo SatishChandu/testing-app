@@ -5,6 +5,6 @@ describe("Mui", () => {
   test("renders text correctly", () => {
     render(<MuiMode />);
     const typoEle = screen.getByRole("heading");
-    expect(typoEle).toHaveTextContent("light mode");
+    expect(typoEle).toHaveTextContent("dark mode");
   });
 });
